@@ -15,12 +15,12 @@ module.exports = {
             'angular2/router',
             'angular2/http'
         ],
-        'app': './app/app'
+        'app': './app/components/app'
     },
 
     output: {
-        path: __dirname + '/build/',
-        publicPath: 'build/',
+        path: __dirname + '/build/components',
+        publicPath: 'build/components',
         filename: '[name].js',
         sourceMapFilename: '[name].js.map',
         chunkFilename: '[id].chunk.js'
