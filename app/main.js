@@ -1,4 +1,5 @@
 var app = require('app');
+var less = require('less');
 
 // browser-window creates a native window
 var BrowserWindow = require('browser-window');
