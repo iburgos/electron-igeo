@@ -18,7 +18,7 @@ class ByteFormatPipe implements PipeTransform {
   selector: 'app',
   pipes: [ByteFormatPipe],
   templateUrl: './templates/app.html',
-  styleUrls:[]
+  styleUrls:['./styles/app.css']
 })
 
 export class App {
