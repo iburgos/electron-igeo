@@ -7,7 +7,7 @@ module.exports = {
     debug: true,
 
     entry: {
-        'angular2': [
+        angular2: [
             'rxjs',
             'zone.js',
             'reflect-metadata',
@@ -15,12 +15,12 @@ module.exports = {
             'angular2/router',
             'angular2/http'
         ],
-        'app': './app/components/app'
+        app: './app/components/app'
     },
 
     output: {
-        path: __dirname + '/build/components',
-        publicPath: 'build/components',
+        path: __dirname + '/build',
+        publicPath: 'build',
         filename: '[name].js',
         sourceMapFilename: '[name].js.map',
         chunkFilename: '[id].chunk.js'

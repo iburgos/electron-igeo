@@ -6,7 +6,7 @@ import {ProjectRepository} from '../repositories/projectRepository';
 
 @Component({
     selector: 'project-list',
-    templateUrl: './templates/menu.html',
+    templateUrl: './templates/projectlist.html',
     directives: [],
     providers: [ProjectRepository]
 })
@@ -18,7 +18,7 @@ export class ProjectList {
     }
 
     ngOnInit() {
-        //this.projects = this.projectRepository.getProjects();
+        this.projectRepository.getProjects().subscribe(projects => this.projects = projects);
     }
 }
 
