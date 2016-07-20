@@ -1,5 +1,5 @@
 import {bootstrap} from 'angular2/platform/browser';
-import {Component, Pipe, PipeTransform} from 'angular2/core';
+import {Component} from 'angular2/core';
 import {NgFor} from 'angular2/common';
 import {Menu} from './menu';
 import {ProjectList} from './projectList';

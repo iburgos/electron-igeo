@@ -21,5 +21,3 @@ export class ProjectList {
         this.projectRepository.getProjects().subscribe(projects => this.projects = projects);
     }
 }
-
-bootstrap(ProjectList);

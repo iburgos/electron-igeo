@@ -12,4 +12,3 @@ export class Menu {
 
   constructor() {}
 }
-bootstrap(Menu)

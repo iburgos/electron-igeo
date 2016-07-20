@@ -18,6 +18,8 @@ app.on('ready', function() {
         height: 900
     });
 
+    mainWindow.webContents.openDevTools();
+
     // Tell Electron where to load the entry point from
     mainWindow.loadURL('file://' + __dirname + '/index.html');
 
