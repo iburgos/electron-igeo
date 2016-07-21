@@ -11,7 +11,7 @@ module.exports = {
   },
 
   resolve: {
-    extensions: ['', '.js', '.ts', '.css', '.html']
+    extensions: ['', '.ts', '.js', '.json', '.css', '.html']
   },
 
   module: {
@@ -40,6 +40,7 @@ module.exports = {
       }
     ]
   },
+
 
   plugins: [
     new webpack.optimize.CommonsChunkPlugin({

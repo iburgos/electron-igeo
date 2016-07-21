@@ -7,7 +7,7 @@ module.exports = webpackMerge(commonConfig, {
   devtool: 'cheap-module-eval-source-map',
 
    output: {
-         path: helpers.root('build'),
+         path: __dirname + '/build',
          publicPath: 'build',
          filename: '[name].js',
          sourceMapFilename: '[name].js.map',
