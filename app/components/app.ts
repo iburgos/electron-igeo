@@ -1,13 +1,16 @@
-import {bootstrap} from 'angular2/platform/browser';
-import {Component} from 'angular2/core';
-import {NgFor} from 'angular2/common';
+import 'rxjs/add/operator/map'; 
+import 'rxjs/add/operator/toPromise';
+import 'rxjs/Rx';
+import { bootstrap } from '@angular/platform-browser-dynamic';
+import {Component} from '@angular/core';
+import {NgFor} from '@angular/common';
 import {Menu} from './menu';
 import {ProjectList} from './projectList';
 
 @Component({
   selector: 'app',
-  templateUrl: './templates/app.html',
-  styleUrls:['./styles/app.css'],
+  templateUrl: '../templates/app.html',
+  styleUrls:['../styles/app.css'],
   directives: [Menu, ProjectList],
 })
 

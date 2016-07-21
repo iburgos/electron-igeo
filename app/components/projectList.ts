@@ -1,6 +1,4 @@
-import {bootstrap} from 'angular2/platform/browser';
-import {Component} from 'angular2/core';
-import {NgFor} from 'angular2/common';
+import {Component} from '@angular/core';
 import {Project} from '../entities/project';
 // import {ProjectRepository} from '../repositories/projectRepository';
 
@@ -9,12 +7,12 @@ import {Project} from '../entities/project';
     // templateUrl: './templates/projectlist.html',
     template:`
     <ul>
-        <li *ngFor="#project of projects">
+        <li *ngFor="let project of projects">
             <p>{{project.id}}</p>
             <p>{{project.name}}</p>
         </li>
     </ul>`,
-    directives: [NgFor]
+    directives: []
     // providers: [ProjectRepository]
 })
 

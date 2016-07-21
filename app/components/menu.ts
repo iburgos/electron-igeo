@@ -1,11 +1,9 @@
-import {bootstrap} from 'angular2/platform/browser';
-import {Component, Pipe, PipeTransform} from 'angular2/core';
-import {NgFor} from 'angular2/common';
+import {Component, Pipe, PipeTransform} from '@angular/core';
 
 @Component({
   selector: 'menu',
-  templateUrl: './templates/menu.html',
-  styleUrls:['./styles/menu.css']
+  templateUrl: '../templates/menu.html',
+  styleUrls:['../styles/menu.css']
 })
 
 export class Menu {
