@@ -1,31 +1,16 @@
 {
     "compilerOptions": {
-        "target": "ES5",
+        "target": "es5",
         "module": "commonjs",
-        "removeComments": true,
+        "moduleResolution": "node",
+        "sourceMap": true,
         "emitDecoratorMetadata": true,
         "experimentalDecorators": true,
-        "sourceMap": true
+        "removeComments": false,
+        "noImplicitAny": true,
+        "suppressImplicitAnyIndexErrors": true
     },
     "files": [
         "./app/components/app.ts"
     ]
 }
-
-
-// {
-//   "compilerOptions": {
-//     "target": "es5",
-//     "module": "commonjs",
-//     "moduleResolution": "node",
-//     "sourceMap": true,
-//     "emitDecoratorMetadata": true,
-//     "experimentalDecorators": true,
-//     "removeComments": false,
-//     "noImplicitAny": true,
-//     "suppressImplicitAnyIndexErrors": true
-//   },
-//     "files": [
-//         "./app/components/app.ts"
-//     ]
-// }
