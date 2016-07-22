@@ -1,5 +1,4 @@
-/// <reference path="../../typings/globals/core-js/index.d.ts" />
-/// <reference path="../../typings/globals/node/index.d.ts" />
+/// <reference path="../../typings/index.d.ts" />
 import { bootstrap } from '@angular/platform-browser-dynamic';
 import {Component} from '@angular/core';
 import {NgFor} from '@angular/common';
