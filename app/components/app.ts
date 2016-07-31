@@ -16,4 +16,4 @@ export class App {
   constructor() {}
 }
 
-bootstrap(App);
+bootstrap(App, [Menu, ProjectList]);
