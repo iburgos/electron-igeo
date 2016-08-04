@@ -1,6 +1,7 @@
 import {Injectable} from '@angular/core';
 import {Http} from '@angular/http';
 import {Project} from '../../entities/project';
+import {Database} from '../Database';
 import 'rxjs/add/operator/map';
 
 @Injectable()

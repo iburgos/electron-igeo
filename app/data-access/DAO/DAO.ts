@@ -1,8 +1,9 @@
 // // dao.ts
 // /// <reference path="../models/usermodel.ts" />
-// /// <reference path="../network/database.ts" />
-// import { Database } from './database';
-// module DAO {
+
+// import { Database } from '../database';
+// import {Project} from '../../entities/project';
+// module ProjectDAO {
 //     export class UserDAO {
 //         create(user: Model.User): Model.User { //Model.User is imported nicely
 //             var test = Database.bookshelf(); 
