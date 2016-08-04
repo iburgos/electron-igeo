@@ -3,7 +3,7 @@
 import {Database} from '../Database';
 import * as Bookshelf from 'bookshelf';
 
-export class ProjectModel extends Database.Config._bookshelf.Model<ProjectModel>
+export class ProjectModel extends Database.Config.bookshelf.Model<ProjectModel>
 { 
     get tableName() { return 'Project'; }
 

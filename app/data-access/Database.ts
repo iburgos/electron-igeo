@@ -12,13 +12,13 @@ module Database {
             }
         });
 
-        static _bookshelf: Bookshelf = Bookshelf(Config._knex); 
+        static bookshelf: Bookshelf = Bookshelf(Config._knex); 
     }
 
     function bookshelf(): Bookshelf {
-        Config._bookshelf.plugin('registry');
+        Config.bookshelf.plugin('registry');
         // Config._bookshelf.plugin(['virtuals']);
-        return Config._bookshelf;
+        return Config.bookshelf;
     }
 }
 
