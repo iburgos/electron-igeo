@@ -33,11 +33,10 @@ module.exports = {
             test: /\.css$/,
             include: helpers.root('app', 'styles'),
             loader: 'raw'
-        },
-         {
-        test: /\.json$/,
-        loader: 'json-loader'
-      }]
+        }, {
+            test: /\.json$/,
+            loader: 'json-loader'
+        }]
     },
 
 
