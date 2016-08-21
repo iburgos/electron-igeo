@@ -1,6 +1,7 @@
 import {Component} from '@angular/core';
 import {Project} from '../entities/project';
 import {ProjectRepository} from '../repositories/projectRepository';
+// import {ProjectRepository} from '../repositories/fake/fakeprojectRepository';
 import { HTTP_PROVIDERS } from '@angular/http';
 
 @Component({
