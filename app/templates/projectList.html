@@ -1,6 +1,14 @@
-<ul>
-    <li *ngFor="let project of projects">
+<div class="headers">
+    <p>Id</p>
+    <p>Name</p>
+    <p class="date">Created</p>
+    <p class="date">Updated</p>
+</div>
+<div class="projects">
+    <div *ngFor="let project of projects">
         <p>{{project.Id}}</p>
         <p>{{project.Name}}</p>
-    </li>
-</ul>
+        <p  class="date">{{project.CreateDate | date:'dd/MM/yyyy'}}</p>
+        <p  class="date">{{project.UpdateDate | date:'dd/MM/yyyy'}}</p>
+    </div>
+</div>
