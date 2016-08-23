@@ -12,7 +12,7 @@ import { HTTP_PROVIDERS } from '@angular/http';
 })
 
 export class ProjectList {
-    
+    nullDate: String =  "0001-01-01T00:00:00";
     projects: Project[];
 
     constructor(private projectRepository: ProjectRepository) {
