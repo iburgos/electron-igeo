@@ -7,10 +7,7 @@ import {Component} from '@angular/core';
 })
 
 export class Menu {
-  // projectImgUrl = __dirname + 'images/project_128.png';
-  projectImgUrl = 'file://' + __dirname + '/images/project_128.png';
+  projectImgUrl = 'images/project_128.png';
 
-  constructor() {
-    console.log('file://' + __dirname + '/images/project_128.png');
-  }
+  constructor() {}
 }
