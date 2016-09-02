@@ -23,4 +23,8 @@ export class ProjectList {
         this.projectRepository.getProjects()
             .subscribe(data => this.projects = data);
     }
+
+    loadProjects(){
+        alert("Loading projects!");
+    }
 }

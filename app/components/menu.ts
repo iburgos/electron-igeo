@@ -7,6 +7,7 @@ import {Component} from '@angular/core';
 })
 
 export class Menu {
+  projectImgUrl = 'images/project_128.png';
 
   constructor() {}
 }

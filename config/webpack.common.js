@@ -11,29 +11,28 @@ module.exports = {
     },
 
     resolve: {
-        extensions: ['', '.ts', '.js', '.json', '.css', '.html']
+        extensions: ['', '.ts', '.js', '.json', '.css', '.html', '.png']
     },
 
     module: {
-        loaders: [{
-            test: /\.ts$/,
-            loaders: ['ts', 'angular2-template-loader'],
-            exclude: [/node_modules/]
-        }, {
-            test: /\.html$/,
-            loader: 'html'
-        }, {
-            test: /\.(png|jpe?g|gif|svg|woff|woff2|ttf|eot|ico)$/,
-            loader: 'file?name=assets/[name].[hash].[ext]'
-        }, {
-            test: /\.css$/,
-            exclude: helpers.root('app', 'styles'),
-            loader: ExtractTextPlugin.extract('style', 'css?sourceMap')
-        }, {
-            test: /\.css$/,
-            include: helpers.root('app', 'styles'),
-            loader: 'raw'
-        }]
+        loaders: [
+            {
+                test: /\.ts$/,
+                loaders: ['ts', 'angular2-template-loader'],
+                exclude: [/node_modules/]
+            }, {
+                test: /\.html$/,
+                loader: 'html'
+            }, {
+                test: /\.(png|jpe?g|gif|svg|woff|woff2|ttf|eot|ico)$/,
+                include: helpers.root('app', 'images'),
+                loader: 'file?name=/images/[name].[ext]'
+            }, {
+                test: /\.css$/,
+                include: helpers.root('app', 'styles'),
+                loader: 'raw'
+            }
+        ]
     },
 
 
