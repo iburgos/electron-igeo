@@ -1,7 +1,3 @@
-import 'zone.js/dist/zone';
-import 'reflect-metadata';
-import 'core-js/es6';
-
 // Angular 2
 import '@angular/platform-browser';
 import '@angular/platform-browser-dynamic';
