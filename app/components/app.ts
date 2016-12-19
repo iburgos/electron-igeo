@@ -5,8 +5,8 @@ import { ProjectList } from './projectList';
 
 @Component({
   selector: 'app',
-  templateUrl: '../templates/app.html',
-  styleUrls: ['../styles/app.css'],
+  templateUrl: '../app/templates/app.html',
+  styleUrls: ['../app/styles/app.css'],
   directives: [Menu, ProjectList],
 })
 

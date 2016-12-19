@@ -6,7 +6,7 @@ import { HTTP_PROVIDERS } from '@angular/http';
 
 @Component({
     selector: 'project-list',
-    templateUrl: '../templates/projectlist.html',
+    templateUrl: '../app/templates/projectlist.html',
     directives: [],
     providers: [ProjectRepository, HTTP_PROVIDERS]
 })

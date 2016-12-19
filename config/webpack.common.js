@@ -13,7 +13,7 @@ module.exports = {
     resolve: {
         modules: [helpers.root(__dirname, '/node_modules/')],
         descriptionFiles: ['package.json'],
-        extensions: ['', '.ts', '.js', '.css']
+        extensions: ['', '.ts', '.js', '.css', '.html']
     },
 
     module: {
@@ -27,7 +27,10 @@ module.exports = {
             loader: 'file?name=/images/[name].[ext]'
         }, {
             test: /\.html$/,
-            loader: 'html'
+            loader: 'html',
+            query: {
+                minimize: true
+            }
         }, {
             test: /\.css$/,
             include: helpers.root('app', 'styles'),
@@ -39,6 +42,7 @@ module.exports = {
         new webpack.optimize.CommonsChunkPlugin({
             name: ['app', 'vendor', 'polyfills', 'common'],
             minChunks: Infinity
-        })
+        }),
+        new HtmlWebpackPlugin()
     ]
 };
