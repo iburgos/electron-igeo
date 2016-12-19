@@ -1,3 +1,7 @@
+import 'zone.js/dist/zone';
+import 'reflect-metadata';
+import 'core-js/es6';
+
 // Angular 2
 import '@angular/platform-browser';
 import '@angular/platform-browser-dynamic';
@@ -9,5 +13,6 @@ import '@angular/router';
 // RxJS
 import 'rxjs';
 
-// Other vendors for example jQuery, Lodash or Bootstrap
-// You can import js, ts, css, sass, ...
+// // Other vendors for example jQuery, Lodash or Bootstrap
+// // You can import js, ts, css, sass, ...
+// import 'jQuery';

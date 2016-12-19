@@ -3,7 +3,6 @@
     "moduleResolution": "node",
     "target": "es6",
     "noImplicitAny": true,
-    // "noEmitOnError": true,
     "sourceMap": true,
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true,
@@ -12,8 +11,13 @@
       "node"
     ]
   },
-  "exclude": [
-    "node_modules"
-  ],
+  "files": [
+		"./app/components/app.ts",
+		"./app/vendor.ts"
+	],
+  // "exclude": [
+  //   "node_modules"
+  // ],
+  "lib": ["es6", "es2015"],
   "compileOnSave": true
 }

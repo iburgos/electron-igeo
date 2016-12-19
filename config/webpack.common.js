@@ -19,7 +19,7 @@ module.exports = {
     module: {
         loaders: [{
             test: /\.ts$/,
-            loaders: ['ts', 'angular2-template-loader'],
+            loader: "babel-loader?presets[]=es2015!ts-loader",
             exclude: [/node_modules/]
         }, {
             test: /\.(png|jpe?g|gif|svg|woff|woff2|ttf|eot|ico)$/,
