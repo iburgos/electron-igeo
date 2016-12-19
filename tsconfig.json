@@ -1,16 +1,19 @@
 {
-    "compilerOptions": {
-        "target": "es5",
-        "module": "commonjs",
-        "moduleResolution": "node",
-        "sourceMap": true,
-        "emitDecoratorMetadata": true,
-        "experimentalDecorators": true,
-        "removeComments": false,
-        "noImplicitAny": true,
-        "suppressImplicitAnyIndexErrors": true
-    },
-    "files": [
-        "./app/components/app.ts"
+  "compilerOptions": {
+    "moduleResolution": "node",
+    "target": "es6",
+    "noImplicitAny": true,
+    // "noEmitOnError": true,
+    "sourceMap": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "skipDefaultLibCheck": true,
+    "types": [
+      "node"
     ]
+  },
+  "exclude": [
+    "node_modules"
+  ],
+  "compileOnSave": true
 }

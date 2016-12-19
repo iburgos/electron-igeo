@@ -1,4 +1,3 @@
-/// <reference path="../../typings/index.d.ts" />
 import { bootstrap } from '@angular/platform-browser-dynamic';
 import {Component} from '@angular/core';
 import {Menu} from './menu';
