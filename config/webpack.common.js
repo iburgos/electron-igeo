@@ -7,7 +7,7 @@ module.exports = {
     entry: {
         'polyfills': './app/polyfills',
         'vendor': './app/vendor',
-        'app': './app/components/app'
+        'app': './app/components/main'
     },
 
     resolve: {

@@ -8,11 +8,12 @@
     "emitDecoratorMetadata": true,
     "skipDefaultLibCheck": true,
     "types": [
-      "node"
+      "node",
+      "hammerjs"
     ]
   },
   "files": [
-		"./app/components/app.ts",
+		"./app/components/main.ts",
 		"./app/vendor.ts"
 	],
   // "exclude": [
