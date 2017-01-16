@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "module": "amd",
     "moduleResolution": "node",
     "target": "es6",
     "noImplicitAny": true,
@@ -14,11 +15,13 @@
   },
   "files": [
 		"./app/components/main.ts",
+    "./app/components/app.component.ts",
+    "./app/components/app.module.ts",
 		"./app/vendor.ts"
 	],
-  // "exclude": [
-  //   "node_modules"
-  // ],
+  "exclude": [
+    "node_modules"
+  ],
   "lib": ["es6", "es2015"],
   "compileOnSave": true
 }

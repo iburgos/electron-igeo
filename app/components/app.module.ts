@@ -7,9 +7,13 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 
 @NgModule({
-    imports: [BrowserModule, MdCardModule, MdButtonModule, MdIconModule],
+    imports: [BrowserModule,
+        MdCardModule,
+        MdButtonModule,
+        MdIconModule],
+    providers: [MdIconRegistry],
     declarations: [AppComponent],
-    bootstrap: [AppComponent],
-    providers: [ MdIconRegistry ]
+    bootstrap: [AppComponent]
 })
 export class AppModule { }
+
