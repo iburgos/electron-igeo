@@ -1,13 +1,13 @@
-import {Component} from '@angular/core';
+// import {Component} from '@angular/core';
 
-@Component({
-  selector: 'menu',
-  templateUrl: '../templates/menu.html',
-  styleUrls:['../styles/menu.css']
-})
+// @Component({
+//   selector: 'menu',
+//   templateUrl: '../app/templates/menu.html',
+//   styleUrls:['../app/styles/menu.css']
+// })
 
-export class Menu {
-  projectImgUrl = 'images/project_128.png';
+// export class Menu {
+//   projectImgUrl = 'images/project_128.png';
 
-  constructor() {}
-}
+//   constructor() {}
+// }
