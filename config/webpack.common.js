@@ -1,7 +1,21 @@
-var webpack = require('webpack');
-var HtmlWebpackPlugin = require('html-webpack-plugin');
-var ExtractTextPlugin = require('extract-text-webpack-plugin');
-var helpers = require('./helpers');
+const webpack = require('webpack');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const helpers = require('./helpers');
+const path = require('path');
+const appRoot = path.resolve(__dirname, '../app');
+
+const styleLoader = [
+    'css-loader?sourceMap',
+    'postcss-loader',
+    'resolve-url-loader',
+    'sass-loader?sourceMap&expanded'
+].join('!');
+
+const sassLoaders = [
+    'css-loader?sourceMap',
+    'sass-loader?iincludePaths[]=' + path.resolve(__dirname, './app/styles')
+]
 
 module.exports = {
     entry: {
@@ -13,9 +27,8 @@ module.exports = {
     resolve: {
         modules: [helpers.root(__dirname, '/node_modules/')],
         descriptionFiles: ['package.json'],
-        extensions: ['', '.ts', '.js', '.css', '.html']
+        extensions: ['', '.ts', '.js', '.scss', '.html']
     },
-
     module: {
         loaders: [{
             test: /\.ts$/,
@@ -36,13 +49,5 @@ module.exports = {
             include: helpers.root('app', 'styles'),
             loader: 'raw'
         }]
-    },
-
-    plugins: [
-        new webpack.optimize.CommonsChunkPlugin({
-            name: ['app', 'vendor', 'polyfills', 'common'],
-            minChunks: Infinity
-        }),
-        new HtmlWebpackPlugin()
-    ]
+    }
 };
