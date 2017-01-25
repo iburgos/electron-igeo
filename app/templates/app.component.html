@@ -1,0 +1,43 @@
+<div layout="column" flex>
+  <!-- Container #1 (see wireframe) -->
+  <md-toolbar layout="row" class="md-toolbar-tools">
+    <button md-fab class="menu md-icon-button" hide-gt-sm ng-click="alert('Hello')" aria-label="Show User List">
+      <i class="material-icons">menu</i>
+    </button>
+    <span style="margin-left: 20px">My Application Title</span>
+  </md-toolbar>
+  <!-- Container #2 -->
+  <div flex="20" layout="row">
+    <md-sidenav-layout>
+      <!-- Container #3 -->
+      <md-sidenav class="md-sidenav-left" md-component-id="left" md-whiteframe="4" #start mode="side" [opened]="true">
+        <md-toolbar class="md-theme-indigo">
+          <h1 class="md-toolbar-tools">Menu</h1>
+        </md-toolbar>
+        <md-list>
+          <md-list-item class="md-3-line" ng-repeat="item in messages">
+            <button md-raised-button ng-click="close()" class="md-primary" hide-gt-md>
+            Close Sidenav Left
+          </button>
+          </md-list-item>
+          <md-list-item class="md-3-line" ng-repeat="item in messages">
+            <button md-raised-button ng-click="close()" class="md-primary" hide-gt-md>
+            Close Sidenav Left
+          </button>
+          </md-list-item>
+          <md-list-item class="md-3-line" ng-repeat="item in messages">
+            <button md-raised-button ng-click="close()" class="md-primary" hide-gt-md>
+            Close Sidenav Left
+          </button>
+          </md-list-item>
+        </md-list>
+        <!--<md-content layout-padding ng-controller="LeftCtrl">-->
+        <!--</md-content>-->
+      </md-sidenav>
+      <!-- Container #4 -->
+      <!--<md-content flex id="content">
+        <ms-user-details selected="$ctrl.selected"></ms-user-details>
+      </md-content>-->
+    </md-sidenav-layout>
+  </div>
+</div>
