@@ -3,12 +3,12 @@ import { OnInit } from "@angular/core";
 
 @Component({
   selector: 'app',
-  template: '<h2>Hello Angular</h2>' 
-  //styleUrls: ['../app/styles/app.css']
+  templateUrl: '../app/templates/app.component.html',
+  styleUrls: ['../app/styles/app.component.scss']
 })
 
-export class AppComponent implements OnInit{
+export class AppComponent implements OnInit {
 
   constructor() { }
-  public ngOnInit(): void{}
+  public ngOnInit(): void { }
 }
